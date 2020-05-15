@@ -1,5 +1,27 @@
 #!/usr/bin/env bash
 
+####
+alias codemacros="code ~/Sites/default_files/program-files/macros.doskey"
+alias codeproject="code ~/Sites/web-newcar/"
+alias codetutorial="code ~/Sites/angular-tutorial/"
+alias cddefault="cd ~/Sites/default_files/"
+alias cdproject="cd ~/Sites/web-newcar/"
+alias cdtutorial="cd ~/Sites/angular-tutorial/"
+
+alias gl="git log --oneline --all --graph --decorate $*"
+alias gs="git status"
+alias gc="git commit -m $*"
+alias gp="git push"
+alias ga="git add ."
+alias gitlog="git log --graph --full-history --all --pretty=format:%h%x09%d%x20%s^"
+alias gitstash="git stash save --keep-index --include-untracked"
+alias gitunstash="git stash apply"
+
+alias updatesettings="sh ~/Sites/dotfiles/bootstrap.sh -f"
+alias restart="exec bash"
+####
+
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
