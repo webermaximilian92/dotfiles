@@ -52,3 +52,4 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # CUSTOM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

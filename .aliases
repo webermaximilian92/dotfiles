@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 ####
-alias codemacros="code ~/Sites/default_files/program-files/macros.doskey"
-alias codeproject="code ~/Sites/web-newcar/"
-alias codetutorial="code ~/Sites/angular-tutorial/"
+alias s="cd ~/Sites/"
 alias cddefault="cd ~/Sites/default_files/"
-alias cdproject="cd ~/Sites/web-newcar/"
 alias cdtutorial="cd ~/Sites/angular-tutorial/"
+alias cddeployment="cd ~/Sites/util-deployment"
+alias cddocker="cd ~/Sites/util-docker"
+alias cdnewcar="cd ~/Sites/web-newcar/"
 
 alias gl="git log --oneline --all --graph --decorate $*"
 alias gs="git status"
@@ -17,10 +17,16 @@ alias gitlog="git log --graph --full-history --all --pretty=format:%h%x09%d%x20%
 alias gitstash="git stash save --keep-index --include-untracked"
 alias gitunstash="git stash apply"
 
+alias sl="s && l"
+
+alias urldecode='python3 -c "import sys, urllib.parse as ul;print(ul.unquote_plus(sys.argv[1]))"'
+
+
 alias updatesettings="sh ~/Sites/dotfiles/bootstrap.sh -f"
 alias restart="exec bash"
-####
 
+####
+# > dotfiles defaults:
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
