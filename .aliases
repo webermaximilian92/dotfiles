@@ -9,11 +9,13 @@ alias cddocker="cd ~/Sites/util-docker"
 alias cdnewcar="cd ~/Sites/web-newcar/"
 alias pi="ssh pi@192.168.178.57 -p 22"
 alias picp="scp $* pi@192.168.178.57:"
+alias pw="git add . && git commit -m'Add new work passwords' && git push"
 
 alias gl="git log --oneline --all --graph --decorate $*"
 alias gs="git status"
 alias gc="git commit -m $*"
 alias gp="git push"
+alias gpu="git push -u origin $*"
 alias ga="git add ."
 alias gitlog="git log --graph --full-history --all --pretty=format:%h%x09%d%x20%s^"
 alias gitstash="git stash save --keep-index --include-untracked"
@@ -25,8 +27,8 @@ alias sl="s && l"
 
 alias urldecode='python3 -c "import sys, urllib.parse as ul;print(ul.unquote_plus(sys.argv[1]))"'
 
-
-alias updatesettings="cd ~/Sites/dotfiles/ && sh bootstrap.sh -f"
+alias aliasedit="code ~/Sites/dotfiles/.aliases"
+alias aliasupdate="cd ~/Sites/dotfiles/ && sh bootstrap.sh -f"
 alias restart="exec bash"
 
 ####
