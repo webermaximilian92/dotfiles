@@ -7,8 +7,10 @@ alias cddefault="cd ~/Sites/default_files/"
 alias cdtutorial="cd ~/Sites/angular-tutorial/"
 alias cddeployment="cd ~/Sites/util-deployment"
 alias cddocker="cd ~/Sites/util-docker"
+
 alias pi="ssh pi@192.168.178.57 -p 22"
 alias picp="scp $* pi@192.168.178.57:"
+
 alias pw="cddefault && git add . && git commit -m'Add new work passwords' && git push"
 
 alias gl="git log --oneline --all --graph --decorate $*"
@@ -21,16 +23,17 @@ alias gitlog="git log --graph --full-history --all --pretty=format:%h%x09%d%x20%
 alias gitstash="git stash save --keep-index --include-untracked"
 alias gitunstash="git stash apply"
 
+alias y="yarn"
+
 alias clearnode="rm -rf package-lock.json node_modules dist reporters/ documentation yarn.lock"
 
 alias urldecode='python3 -c "import sys, urllib.parse as ul;print(ul.unquote_plus(sys.argv[1]))"'
 
+alias restart="exec bash"
+
 alias aliasedit="code ~/Sites/dotfiles/.aliases"
 alias aliasupdate="cd ~/Sites/dotfiles/ && bash bootstrap.sh -f && restart"
 alias aliassync="cd ~/Sites/dotfiles/ && git add . && git commit -m'Add new aliases' && git push"
-alias restart="exec bash"
-
-alias y="yarn"
 
 ####
 # > dotfiles defaults:
